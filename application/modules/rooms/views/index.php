@@ -13,7 +13,10 @@
 				<tr>
 					<th>No</th>
 					<th>Name Room</th>
-					<th>Photo Room</th>
+					<th>Room</th>
+					<th>Badroom</th>
+					<th>Full Room</th>
+					<th>Facilities Room</th>
 					<th>Diskription</th>
 					<th colspan="2">Action</th>
 				</tr>
@@ -24,6 +27,9 @@
 					<td width="20px"><?= $no++  ?></td>
 					<td><?= $row->nama_room ?></td>
 					<td><img src="<?= base_url('uploads/rooms/'.$row->photo_room) ?>" width="70" alt=""></td>
+					<td><img src="<?= base_url('uploads/badroom/'.$row->kamar_mandi) ?>" width="70" alt=""></td>
+					<td><img src="<?= base_url('uploads/fullroom/'.$row->halaman) ?>" width="70" alt=""></td>
+					<td><img src="<?= base_url('uploads/facilitiesroom/'.$row->fasilitas_room) ?>" width="70" alt=""></td>
 					<td><?= $row->diskrip_room ?></td>
 					<td width="20px"><a href="<?= site_url('rooms/update/'.$row->id_room) ?>" class="btn btn-sm btn-info rounded-pill" data-toggle="modal" data-target="#editModal<?=$row->id_room?>">Edit</a></td>
 					<td width="20px"><a href="<?= site_url('rooms/delete/'.$row->id_room) ?>" onclick="return confirm('Apakah kamu ingin menghapus data room <?=$row->id_room?>')" class="btn btn-sm btn-danger rounded-pill">Delete</a></td>
@@ -69,10 +75,27 @@
 						<input type="text" name="harga" class="form-control" placeholder="input harga room">
 						<?php echo form_error('harga', '<div class="text-danger small ml-3">') ?>
 					</div>
+
 					<div class="form-group">
 						<label for="photo_room">Photo Room</label>
 						<input type="file" name="photo_room" class="form-control-file">
 					</div>
+
+					<div class="form-group">
+						<label for="badroom">Badroom</label>
+						<input type="file" name="badroom" class="form-control-file">
+					</div>
+
+					<div class="form-group">
+						<label for="fullroom">Full Room</label>
+						<input type="file" name="fullroom" class="form-control-file">
+					</div>
+
+					<div class="form-group">
+						<label for="facilitiesroom">Facilities Room</label>
+						<input type="file" name="facilitiesroom" class="form-control-file">
+					</div>
+
 					<div class="modal-footer">
 						<button class="btn btn-danger" data-dismiss="modal">Close</button>
 						<button type="submit" class="btn btn-primary">Add Data Rooms</button>
@@ -125,9 +148,28 @@
 							<input type="text" name="harga" class="form-control" value="<?= $row->harga ?>">
 							<?php echo form_error('harga', '<div class="text-danger small ml-3">') ?>
 						</div>
+
 						<div class="form-group">
 							<label for="photo_room">Photo Room</label>
 							<input type="file" name="photo_room" class="form-control-file">
+							<input type="hidden" name="old_image" value="<?= $row->photo_room ?>">
+						</div>
+						
+						<div class="form-group">
+							<label for="badroom">Badroom</label>
+							<input type="file" name="badroom" class="form-control-file">
+							<input type="hidden" name="old_image" value="<?= $row->photo_room ?>">
+						</div>
+
+						<div class="form-group">
+							<label for="fullroom">Full Room</label>
+							<input type="file" name="fullroom" class="form-control-file">
+							<input type="hidden" name="old_image" value="<?= $row->photo_room ?>">
+						</div>
+
+						<div class="form-group">
+							<label for="facilitiesroom">Facilities Room</label>
+							<input type="file" name="facilitiesroom" class="form-control-file">
 							<input type="hidden" name="old_image" value="<?= $row->photo_room ?>">
 						</div>
 						<div class="modal-footer">
