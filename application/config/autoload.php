@@ -140,5 +140,6 @@ $autoload['model'] = array(
 	'statusroom/statusroom_model',
 	'rooms/rooms_model', 
 	'galery/galery_model',
+	'food/food_model',
 	'testimoni/testimoni_model',
 	'villa/villa_model');
