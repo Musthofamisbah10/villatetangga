@@ -39,8 +39,8 @@
 	        $config['last_tagl_close']  = '</span></li>';
 
 	        $this->pagination->initialize($config);
-			$data['judul'] = 'Data food';
-			$data['header'] = 'Data food';
+			$data['judul'] = 'Data Food';
+			$data['header'] = 'Data Food';
 			$data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 			$data['food'] = $this->food_model->getAllFood($config["per_page"], $data['page']);
 			$data['pagination'] = $this->pagination->create_links();

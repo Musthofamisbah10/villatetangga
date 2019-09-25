@@ -54,6 +54,7 @@
               <a class="collapse-item" href="<?= base_url('facilities') ?>">Facilities</a>
               <a class="collapse-item" href="<?= base_url('statusroom') ?>">Room Status</a>
               <a class="collapse-item" href="<?= base_url('rooms') ?>">Rooms</a>
+              <a class="collapse-item" href="<?= base_url('food') ?>">Food</a>
             </div>
           </div>
         </li>

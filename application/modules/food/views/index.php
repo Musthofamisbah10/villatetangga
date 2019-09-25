@@ -12,7 +12,7 @@
 			<thead>
 				<tr>
 					<th>No</th>
-					<th>Name food</th>
+					<th>Name Food</th>
 					<th>Food</th>
 					<th>Diskription</th>
 					<th colspan="2">Action</th>
