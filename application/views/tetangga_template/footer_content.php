@@ -26,7 +26,7 @@
         <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; Tetangga <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >M Misbah Musthofa</a>
+            Copyright &copy; All Rights Reserved <a href="<?= base_url() ?>" target="_blank" ></a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
         </div>      
