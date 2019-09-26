@@ -1,15 +1,16 @@
 
-    <div class="site-blocks-cover overlay " data-aos="fade" data-stellar-background-ratio="0.5" style="background-image: url('http://localhost/tetangga/assets/images/walpaper_1.jpg');">
+    <div class="site-blocks-cover overlay " data-aos="fade" data-stellar-background-ratio="0.5" style="background-image: url('<?= base_url('uploads/jumbotron.jpg') ?>');">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" style="margin-top: -200px;" data-aos="fade">
                     <h1 class="mb-3">Tetangga Rooms</h1>
-                    <h2 class="caption">Hotel &amp; Resort</h2>
+                    <h2 class="caption">Villa &amp; Resort</h2>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Rooms -->
     <div class="site-section block-15 bg-light">
         <div class="container">
             <div class="row">
@@ -30,17 +31,21 @@
                         <span class="badge badge-success"><?= $room->nama_status ?></span><br>
                         <strong class="price">IDR <?= $room->harga ?> / per night</strong>
                         <p><?= $room->diskrip_room ?></p>
-                        <p><a href="#">Detile Room</a></p>
-                        <a href="https://wa.widget.web.id/7252a0" class="btn btn-primary" target="_blank">Book Now</a>
+                        <p><a href="<?= site_url('tetangga/detileroom/').$room->id_room ?>">Detile Room</a></p>
+                        <a href="https://wa.widget.web.id/815e6f" class="btn btn-primary" target="_blank">Book Now</a>
                     </div>
                 </div>
             <?php endforeach; ?>
             </div>
         </div>
     </div>
+    <!-- Rooms -->
 
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <?php $this->load->view('_partial/footer') ?>
+            <?php $this->load->view('tetangga_template/footer_content') ?>
         </div>
     </footer>
+    <!-- Footer -->

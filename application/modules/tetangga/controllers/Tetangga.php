@@ -26,7 +26,7 @@
 
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);
-			$this->load->view('index', $data);
+			$this->load->view('rooms', $data);
 			$this->load->view('tetangga_template/footer', $data);
 		}
 

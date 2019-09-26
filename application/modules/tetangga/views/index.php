@@ -35,7 +35,7 @@
                         <span class="badge badge-success"><?= $room->nama_status ?></span><br>
                         <strong class="price">IDR <?= $room->harga ?> / per night</strong>
                         <p><?= $room->diskrip_room ?></p>
-                        <p><a href="<?= base_url('tetangga/detileroom') ?>">Detile Room</a></p>
+                        <p><a href="<?= site_url('tetangga/detileroom/').$room->id_room ?>">Detile Room</a></p>
                         <a href="https://wa.widget.web.id/815e6f" class="btn btn-primary" target="_blank">Book Now</a>
                     </div>
                 </div>
