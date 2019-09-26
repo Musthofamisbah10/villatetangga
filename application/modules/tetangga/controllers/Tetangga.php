@@ -4,7 +4,7 @@
 
 		public function index()
 		{	
-
+			$data['foods'] = $this->food_model->getFood();
 			$data['villa'] = $this->villa_model->getAllVilla();
 			$data['rooms'] = $this->rooms_model->getAllRoom();
 			$data['facilities'] = $this->facilities_model->getFacilities();
@@ -19,7 +19,9 @@
 
 		public function rooms()
 		{	
+			$data['facilities'] = $this->facilities_model->getFacilities();
 			$data['rooms'] = $this->rooms_model->getAllRoom();
+			$data['galery'] = $this->galery_model->getGalery();
 
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);

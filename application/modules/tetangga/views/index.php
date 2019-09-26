@@ -180,6 +180,33 @@
     </div>
     <!-- Whay Book -->
 
+    <!-- Food -->
+    <div class="site-section block-15 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                    <h2>Our Rooms</h2>
+                </div>
+            </div>
+            <div class="nonloop-block-15 owl-carousel">
+            <?php foreach ($foods as $food): ?>
+                <div class="media-with-text p-md-4 no-gutters">
+                    <div class="img-border-sm mb-4">
+                        <a href="<?= base_url('uploads/food/').$food->food ?>" class="image-popup img-opacity">
+                            <img src="<?= base_url('uploads/food/').$food->food ?>" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="heading mb-0"><a href="#"><?= $food->name_food ?></a></h2>
+                        <strong class="price"><?= $food->diskripsi ?></strong>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+    <!-- Food -->
+
     <!-- Testimoni -->
     <div class="site-section block-14">
         <div class="container">
