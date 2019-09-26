@@ -44,6 +44,7 @@
 		public function about()
 		{
 			$data['villa'] = $this->villa_model->getAllVilla();
+			$data['foods'] = $this->food_model->getFood();
 			$data['rooms'] = $this->rooms_model->getAllRoom();
 			$data['facilities'] = $this->facilities_model->getFacilities();
 			$data['galery'] = $this->galery_model->getGalery();
