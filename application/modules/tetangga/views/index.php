@@ -216,30 +216,16 @@
                 </div>
             </div>
             <div class="nonloop-block-14 owl-carousel">
-                <div class="p-4">
-                    <div class="d-flex block-testimony">
-                        <div>
-                            <h2 class="h5">Exc</h2>
-                            <blockquote>&ldquo;Coming Soon&rdquo;</blockquote>
+                <?php foreach ($testimoni as $tes): ?>
+                    <div class="p-4">
+                        <div class="d-flex block-testimony">
+                            <div>
+                                <h2 class="h5"><?= $tes->nama_guest ?></h2>
+                                <blockquote>&ldquo;<?= $tes->testi ?>&rdquo;</blockquote>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-4">
-                    <div class="d-flex block-testimony">
-                        <div>
-                            <h2 class="h5">Exc</h2>
-                            <blockquote>&ldquo;Coming Soon&rdquo;</blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <div class="d-flex block-testimony">
-                        <div>
-                            <h2 class="h5">Exc</h2>
-                            <blockquote>&ldquo;Coming Soon&rdquo;</blockquote>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach ?>
             </div>
         </div>
     </div>

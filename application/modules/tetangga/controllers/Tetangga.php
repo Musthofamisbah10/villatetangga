@@ -4,6 +4,7 @@
 
 		public function index()
 		{	
+			$data['testimoni'] = $this->testimoni_model->getAllTestimoni();
 			$data['foods'] = $this->food_model->getFood();
 			$data['villa'] = $this->villa_model->getAllVilla();
 			$data['rooms'] = $this->rooms_model->getAllRoom();
