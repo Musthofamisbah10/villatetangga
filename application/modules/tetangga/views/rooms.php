@@ -40,7 +40,76 @@
         </div>
     </div>
     <!-- Rooms -->
+    
+    <!-- Whay Book -->
+    <div class="site-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                    <h2 class="mb-5">Whay Book Room in Villa Tetangga ?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="hotel-room text-center">
+                        <div class="intro">
+                           <img style="width: 200px;" class="intro-img img-fluid mb-2 mb-lg-0 rounded" src="<?= base_url('uploads/icon1.png') ?>" alt="icon1">
+                           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Header Coming Soon</span>
+                                    <span class="section-heading-lower">Header Coming Soon</span>
+                                </h2>
+                                <hr class="bg-primary">
+                                <p class="mb-3">Value guest while book on villa tetangga - Coming Soon -</p>
+                               <div class="intro-button mx-auto">
+                                   <a class="btn btn-primary btn-xl" href="#">Visit Us!</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="hotel-room text-center">
+                        <div class="intro">
+                           <img style="width: 200px;" class="intro-img img-fluid mb-2 mb-lg-0 rounded" src="<?= base_url('uploads/icon2.png') ?>" alt="icon2">
+                           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Header Coming Soon</span>
+                                    <span class="section-heading-lower">Header Coming Soon</span>
+                                </h2>
+                                <hr class="bg-primary">
+                                <p class="mb-3">Value guest while book on villa tetangga - Coming Soon -</p>
+                               <div class="intro-button mx-auto">
+                                   <a class="btn btn-primary btn-xl" href="#">Visit Us!</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="hotel-room text-center">
+                        <div class="intro">
+                           <img style="width: 200px;" class="intro-img img-fluid mb-2 mb-lg-0 rounded" src="<?= base_url('uploads/icon3.png') ?>" alt="icon3">
+                           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Header Coming Soon</span>
+                                    <span class="section-heading-lower">Header Coming Soon</span>
+                                </h2>
+                                <hr class="bg-primary">
+                                <p class="mb-3">Value guest while book on villa tetangga - Coming Soon -</p>
+                               <div class="intro-button mx-auto">
+                                   <a class="btn btn-primary btn-xl" href="#">Visit Us!</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- Whay Book -->
 
     <!-- Footer -->
     <footer class="site-footer">
