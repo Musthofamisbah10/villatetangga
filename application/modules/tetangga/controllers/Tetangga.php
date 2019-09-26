@@ -14,7 +14,7 @@
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);
 			$this->load->view('index', $data);
-			$this->load->view('tetangga_template/footer');
+			$this->load->view('tetangga_template/footer', $data);
 		}
 
 		public function rooms()
@@ -26,7 +26,7 @@
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);
 			$this->load->view('index', $data);
-			$this->load->view('tetangga_template/footer');
+			$this->load->view('tetangga_template/footer', $data);
 		}
 
 		public function detileroom($id=null)
@@ -37,7 +37,7 @@
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);
 			$this->load->view('detileroom', $data);
-			$this->load->view('tetangga_template/footer');
+			$this->load->view('tetangga_template/footer', $data);
 		}
 
 		public function about()
@@ -50,7 +50,7 @@
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);
 			$this->load->view('about', $data);
-			$this->load->view('tetangga_template/footer');
+			$this->load->view('tetangga_template/footer', $data);
 		}
 
 		public function contact()
@@ -61,7 +61,7 @@
 			$this->load->view('tetangga_template/header');
 			$this->load->view('tetangga_template/navbar', $data);
 			$this->load->view('contact', $data);
-			$this->load->view('tetangga_template/footer');
+			$this->load->view('tetangga_template/footer', $data);
 
 		}
 	}
