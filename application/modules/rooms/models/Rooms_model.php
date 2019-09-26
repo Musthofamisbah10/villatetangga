@@ -53,6 +53,11 @@
 			return $this->db->get()->result();
 		}
 
+		public function RoomById($id)
+		{
+			return $this->db->get_where('room', ['id_room' => $id])->result();
+		}
+
 		public function getRoomById($id)
 		{
 			return $this->db->get_where('room', ['id_room' => $id])->row();
@@ -82,30 +87,30 @@
 
 				// room
 				if (!empty($_FILES['photo_room']['name'])) {
-					$this->photo_room = $this->_uploadImage();
+					$this->photo_room = $this->_uploadImageRoom();
 				}else{
-					$this->photo_room = $post['old_image'];
+					$this->photo_room = $post['old_photo_room'];
 				}
 
 				// badroom
 				if (!empty($_FILES['badroom']['name'])) {
-					$this->kamar_mandi = $this->_uploadImage();
+					$this->kamar_mandi = $this->_uploadImageBadroom();
 				}else{
-					$this->kamar_mandi = $post['old_image'];
+					$this->kamar_mandi = $post['old_badroom'];
 				}
 
 				// fullroom
 				if (!empty($_FILES['fullroom']['name'])) {
-					$this->halaman = $this->_uploadImage();
+					$this->halaman = $this->_uploadImageFullroom();
 				}else{
-					$this->halaman = $post['old_image'];
+					$this->halaman = $post['old_fullroom'];
 				}
 
 				// facilitiesroom
 				if (!empty($_FILES['facilitiesroom']['name'])) {
-					$this->fasilitas_room = $this->_uploadImage();
+					$this->fasilitas_room = $this->_uploadImageFacilitiesroom();
 				}else{
-					$this->fasilitas_room = $post['old_image'];
+					$this->fasilitas_room = $post['old_facilitiesroom'];
 				}
 
 			$this->diskrip_room = $post['diskrip_room'];
@@ -128,7 +133,7 @@
 		{
 			$config['upload_path']		= './uploads/rooms/';
 			$config['allowed_types']	= 'jpg|png|gif';
-			$config['file_name']		= "room_".$this->id_room;
+			$config['file_name']		= "room_".time();
 			$config['overwrite']		= true;
 			$config['max_size']			= 1024;
 
@@ -145,7 +150,7 @@
 		{
 			$config['upload_path']		= './uploads/badroom/';
 			$config['allowed_types']	= 'jpg|png|gif';
-			$config['file_name']		= "badroom_".$this->id_room;
+			$config['file_name']		= "badroom_".time();
 			$config['overwrite']		= true;
 			$config['max_size']			= 1024;
 
@@ -162,7 +167,7 @@
 		{
 			$config['upload_path']		= './uploads/fullroom/';
 			$config['allowed_types']	= 'jpg|png|gif';
-			$config['file_name']		= "fullroom_".$this->id_room;
+			$config['file_name']		= "fullroom_".time();
 			$config['overwrite']		= true;
 			$config['max_size']			= 1024;
 
@@ -179,7 +184,7 @@
 		{
 			$config['upload_path']		= './uploads/facilitiesroom/';
 			$config['allowed_types']	= 'jpg|png|gif';
-			$config['file_name']		= "facilitiesroom_".$this->id_room;
+			$config['file_name']		= "facilitiesroom_".time();
 			$config['overwrite']		= true;
 			$config['max_size']			= 1024;
 

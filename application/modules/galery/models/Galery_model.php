@@ -81,11 +81,11 @@
 		{
 			$config['upload_path']		= './uploads/galery/';
 			$config['allowed_types']	= 'jpg|png|gif';
-			$config['file_name']		= "room_".$this->id_photo;
+			$config['file_name']		= "room_".time();
 			$config['overwrite']		= true;
 			$config['max_size']			= 1024;
 
-			$this->load->library('upload', $config);
+			$this->upload->initialize($config);
 			if ($this->upload->do_upload('photo')){
 				return $this->upload->data('file_name');
 			}

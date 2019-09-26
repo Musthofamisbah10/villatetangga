@@ -52,12 +52,7 @@
 
 		public function getGuestById($id)
 		{
-			return $this->db->get_where($this->_table, $this, ['id_guest' => $id])->row();
-		}
-
-		public function detile($id)
-		{
-			return $this->db->get_where($this->_table, ['id_guest' => $id])->row();
+			$this->db->get_where($this->_table, ['id_guest' => $id])->row();
 		}
 
 		public function save()

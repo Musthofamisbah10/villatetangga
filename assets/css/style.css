@@ -192,7 +192,7 @@ a {
     font-family: "Playfair Display"; }
     .site-navbar .site-logo a {
       font-weight: 200;
-      font-size: 25px; }
+      font-size: 26px; }
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu a {
@@ -338,7 +338,7 @@ a {
       .site-navbar-wrap.scrolled .site-navbar .site-navigation .site-menu > li > a:hover {
         color: #000; }
     .site-navbar-wrap.scrolled .site-navbar .site-navigation .site-menu > li.active > a {
-      color: #2196F3 !important; }
+      color: #f23a2e !important; }
 
 .site-mobile-menu {
   width: 300px;
@@ -414,7 +414,7 @@ a {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #2196F3; }
+        color: #f23a2e; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -475,7 +475,7 @@ a {
 .site-blocks-cover {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 80%!important; }
+  background-position: center center; }
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
@@ -503,8 +503,8 @@ a {
     font-family: "Playfair Display"; }
     @media (min-width: 768px) {
       .site-blocks-cover h1 {
-        font-size: 3rem;
-        font-weight: 500;
+        font-size: 4rem;
+        font-weight: 900;
         line-height: 1.2; } }
   .site-blocks-cover p {
     color: #fff;
@@ -740,7 +740,7 @@ a {
       -o-transition: .3s all ease;
       transition: .3s all ease; }
     .block-13 .owl-dots .owl-dot.active > span, .block-14 .owl-dots .owl-dot.active > span, .block-15 .owl-dots .owl-dot.active > span {
-      background: #2196F3; }
+      background: #f23a2e; }
 
 .slide-one-item.home-slider .owl-nav {
   -webkit-transition: .3s all ease-in-out;
@@ -1427,8 +1427,3 @@ a {
   cursor: zoom-in; }
   .img-opacity:hover img {
     opacity: .5; }
-
-.fas{
-  font-size: 70px;
-  color: #2196F3;
-}

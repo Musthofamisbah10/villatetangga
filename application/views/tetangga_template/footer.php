@@ -14,5 +14,10 @@
 
         <!-- fontawesome -->
         <link rel="stylesheet" href="<?php echo base_url('assets/vendor/fontawesome/js/all.min.js') ?>">
+
+        <!-- thumber -->
+        <script src="<?= base_url() ?>js/jquery.fancybox.min.js"></script>
+        <script src="<?= base_url() ?>js/swiper.min.js"></script>
+        <script src="<?= base_url() ?>js/jquery.scrollbar.js"></script>
     </body>
 </html>

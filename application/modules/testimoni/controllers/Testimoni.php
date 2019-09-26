@@ -7,7 +7,7 @@
 			$data['judul'] = 'Data Testimoni';
 			$data['header'] = 'Data Testimini';
 			$data['guest'] = $this->guest_model->getGuest();
-			// $data['guest'] = $this->guest_model->getGuestById();
+			// $data['guest'] = $this->guest_model->getGuestById($);
 			$data['testimoni'] = $this->testimoni_model->getAllTestimoni();
 
 			$this->load->view('admin_template/header', $data);

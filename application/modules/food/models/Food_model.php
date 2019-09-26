@@ -81,11 +81,11 @@
 		{
 			$config['upload_path']		= './uploads/food/';
 			$config['allowed_types']	= 'jpg|png|gif';
-			$config['file_name']		= "food_".$this->id_food;
+			$config['file_name']		= "food_".time();
 			$config['overwrite']		= true;
 			$config['max_size']			= 1024;
 
-			$this->load->library('upload', $config);
+			$this->upload->initialize($config);
 			if ($this->upload->do_upload('food')){
 				return $this->upload->data('file_name');
 			}

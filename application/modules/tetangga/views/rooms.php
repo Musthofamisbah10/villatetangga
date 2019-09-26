@@ -39,8 +39,8 @@
         </div>
     </div>
 
-<footer class="site-footer">
-    <div class="container">
-        <?php $this->load->view('_partial/footer') ?>
-    </div>
-</footer>
+    <footer class="site-footer">
+        <div class="container">
+            <?php $this->load->view('_partial/footer') ?>
+        </div>
+    </footer>

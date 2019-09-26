@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/icomoon/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/flaticon/font/flaticon.css">
-
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/magnific-popup.css">
@@ -23,6 +22,11 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/aos.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/fontawesome/css/all.min.css">
-    
+
+    <!-- thumber -->
+    <link rel="stylesheet" href="<?= base_url() ?>css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="<?= base_url() ?>css/fancybox.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>css/swiper.min.css">
+
 </head>
 <body>

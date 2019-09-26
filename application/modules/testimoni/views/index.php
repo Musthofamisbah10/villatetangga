@@ -83,13 +83,15 @@
 				<form action="<?= base_url('testimoni/update') ?>" method="post">
 					<div class="form-group">
 						<input type="hidden" name="id_testi" value="<?= $row->id_testi ?>">
-						<label for="Name_Guest">Name Guest</label>
-						<select name="id_guest" class="form-control">
+						<label for="d_guest">Name Guest</label>
+						<select id="id_guest" name="id_guest" class="form-control">
 							<?php foreach ($guest as $gst): ?>
-								<?php if ( $gst->id_guest == $guest->$id_guest ): ?>
-									<option value="<?= $gst->id_guest ?>"><?= $gst->nama_guest ?></option>
+								<?php if ( $gst->id_guest == $guest->$id_guest): ?>
+
+									
 								<?php else: ?>
 									<option value="<?= $gst->id_guest ?>" selected><?= $gst->nama_guest ?></option>
+									
 								<?php endif; ?>
 							<?php endforeach; ?>
 						</select>

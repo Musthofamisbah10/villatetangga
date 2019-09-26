@@ -26,14 +26,14 @@
                                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                                     <li class="active"><a href="<?= base_url('tetangga') ?>">Home</a></li>
                                     <li class="has-children">
-                                        <a href="rooms.html">Rooms</a>
+                                        <a href="<?= base_url('tetangga/rooms') ?>">Rooms</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="rooms.html">Standard Room</a></li>
-                                            <li><a href="rooms.html">Family Room</a></li>
-                                            <li><a href="rooms.html">Single Room</a></li>
-                                            <li><a href="rooms.html">Rooms</a></li>
+                                        <?php foreach ($rooms as $row): ?>
+                                            <li><a class="has-children" href="<?= site_url('tetangga/detileroom/').$row->id_room?>"><?= $row->nama_room ?></a></li>
+                                        <?php endforeach ?>
                                         </ul>
                                     </li>
+
                                     <!-- <li><a href="events.html">Events</a></li> -->
                                     <li><a href="<?= base_url('tetangga/about') ?>">About</a></li>
                                     <li><a href="<?= base_url('tetangga/contact') ?>">Contact</a></li>
