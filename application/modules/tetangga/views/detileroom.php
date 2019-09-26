@@ -1,9 +1,9 @@
-<div class="site-blocks-cover overlay " data-aos="fade" data-stellar-background-ratio="0.5" style="background-image: url('http://localhost/tetangga/assets/images/walpaper_1.jpg');">
+<div class="site-blocks-cover overlay " data-aos="fade" data-stellar-background-ratio="0.5" style="background-image: url('<?= base_url('uploads/jumbotron.jpg') ?>');">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" style="margin-top: -200px;" data-aos="fade">
                 <h1 class="mb-3">Tetangga Rooms</h1>
-                <h2 class="caption">Hotel &amp; Resort</h2>
+                <h2 class="caption">Villa &amp; Resort</h2>
             </div>
         </div>
     </div>

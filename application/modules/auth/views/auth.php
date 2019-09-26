@@ -17,7 +17,7 @@
                       <h1 class="h4 text-gray-900 mb-4">Login Admin</h1>
                       <?php echo $this->session->flashdata('pesan'); ?>
                     </div>
-                    <form action="<?php echo base_url() ?>auth/save" method="post" class="user">
+                    <form action="<?= base_url('auth/save') ?>" method="post" class="user">
                       <div class="form-group">
                         <input type="text" name="username" class="form-control form-control-user" placeholder="Username Anda...">
                         <?php echo form_error('username', '<div class="text-danger small ml-3">','</div>'); ?>
